@@ -23,8 +23,9 @@
 -->
 <html manifest="cyburphone.appcache">
 	<head>
-		<title>Commtrunks</title>
+		<title>CyburPhone</title>
 		<link rel="stylesheet" href="<?php echo $layout; ?>" />
+		<link rel="stylesheet" href="css/default.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
@@ -34,9 +35,8 @@
 		<meta http-equiv="Pragma" content="no-cache">
 		<meta http-equiv="Expires" content="-1">
 		<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-		
 	</head>
-	<>
+	<body>
 		<!-- Container -->
 		<div id="container">
 
@@ -52,7 +52,6 @@
 				</section>
 				<!-- End Logo -->
 
-				<!-- Controls -->
 				<section id="controls">
 					<section id="registration_control">
 						<input type="text" value="Unregistered" id="reg_status" readonly>
@@ -74,13 +73,9 @@
 
 					</section>
 				</section>
+								<!-- On Hook UI -->
 
-
-				<!-- End Controls -->
-
-				<!-- On Hook UI -->
-
-				  <div id="agent-status">
+								<div id="agent-status">
                   <button id="set-onhook">On-Hook</button>
                   <span id="status-display">Available</span>
                   </div>
@@ -94,18 +89,18 @@
 				<section id="dialpad">
 					<section id="dial_row1">
 					<button class="dialpad_button" id="one">1</button>
-					<button class="dialpad_button" id="two">2</button>
-					<button class="dialpad_button" id="three">3</button>
+					<button class="dialpad_button" id="two">2 abc</button>
+					<button class="dialpad_button" id="three">3 def</button>
 					</section>
 					<section id="dial_row2">
-					<button class="dialpad_button" id="four">4</button>
-					<button class="dialpad_button" id="five">5</button>
-					<button class="dialpad_button" id="six">6</button>
+					<button class="dialpad_button" id="four">4 ghi</button>
+					<button class="dialpad_button" id="five">5 jkl</button>
+					<button class="dialpad_button" id="six">6 mno</button>
 					</section>
 					<section id="dial_row3">
-					<button class="dialpad_button" id="seven">7</button>
-					<button class="dialpad_button" id="eight">8</button>
-					<button class="dialpad_button" id="nine">9</button>
+					<button class="dialpad_button" id="seven">7 pqrs</button>
+					<button class="dialpad_button" id="eight">8 tuv</button>
+					<button class="dialpad_button" id="nine">9 wyz</button>
 					</section>
 					<section id="dial_row4">
 					<button class="dialpad_button" id="star">*</button>
@@ -178,7 +173,6 @@
 		var langUnregistered 		= '<?php echo $langUnregistered; ?>';
 		var langUnregistering		= '<?php echo $langUnregistering; ?>';
 		var langWebrtcError 		= '<?php echo $langWebrtcError; ?>';
-		
 
 
 		</script>
@@ -192,7 +186,6 @@
 
 		<!-- Our Java Script Code -->
 		<script  type="text/javascript" src="js/cybur_phone.js"></script>
-		
 
 	</body>
 </html>
